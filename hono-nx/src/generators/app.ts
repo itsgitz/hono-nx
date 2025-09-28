@@ -10,6 +10,11 @@ import * as path from 'path';
 import { AppGeneratorSchema } from './schema';
 
 export async function appGenerator(tree: Tree, options: AppGeneratorSchema) {
+  // Throw error if name is not provided
+  if (!options.name) {
+    throw new Error('Name is required');
+  }
+
   //
   // By default we create apps under the `apps/` directory.
   const projectRoot = options.directory
