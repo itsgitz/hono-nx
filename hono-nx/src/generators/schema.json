@@ -11,13 +11,7 @@
         "$source": "argv",
         "index": 0
       },
-      "x-prompt": "What name would you like to use?"
-    },
-    "port": {
-      "type": "number",
-      "description": "",
-      "default": 3000,
-      "x-prompt": "What port would you like to use?"
+      "x-prompt": "What name would you like to use for the application? (e.g., api)"
     },
     "directory": {
       "type": "string",
@@ -26,11 +20,16 @@
         "$source": "argv",
         "index": 1
       },
-      "x-prompt": "What directory would you like to use?"
+      "x-prompt": "In which directory should the application be created? (Leave blank for 'apps/')"
+    },
+    "port": {
+      "type": "number",
+      "description": "",
+      "default": 3000,
+      "x-prompt": "Which port should the application use?"
     }
   },
   "required": [
-    "name",
-    "directory"
+    "name"
   ]
 }
