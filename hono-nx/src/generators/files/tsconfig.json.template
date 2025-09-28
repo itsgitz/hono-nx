@@ -3,6 +3,7 @@
   "compilerOptions": {
     "target": "ESNext",
     "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "strict": true,
     "verbatimModuleSyntax": true,
     "skipLibCheck": true,
@@ -13,5 +14,8 @@
     "jsxImportSource": "hono/jsx",
     "outDir": "./dist"
   },
+  "include": [
+    "src/**/*.ts"
+  ],
   "exclude": ["node_modules"]
 }

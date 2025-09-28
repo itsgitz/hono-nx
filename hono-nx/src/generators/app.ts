@@ -1,4 +1,5 @@
 import {
+  addDependenciesToPackageJson,
   addProjectConfiguration,
   formatFiles,
   generateFiles,
@@ -30,18 +31,21 @@ export async function appGenerator(tree: Tree, options: AppGeneratorSchema) {
         executor: 'nx:run-commands',
         options: {
           command: 'npm run build',
+          cwd: joinPathFragments(projectRoot),
         },
       },
       serve: {
         executor: 'nx:run-commands',
         options: {
-          command: 'npm run serve',
+          command: 'npm run dev',
+          cwd: joinPathFragments(projectRoot),
         },
       },
       start: {
         executor: 'nx:run-commands',
         options: {
           command: 'npm run start',
+          cwd: joinPathFragments(projectRoot),
         },
       },
     },
@@ -52,6 +56,19 @@ export async function appGenerator(tree: Tree, options: AppGeneratorSchema) {
     port: options.port ?? 3000,
     tmpl: '',
   });
+
+  //
+  // Ensure tooling or dev dependencies are added to the root package.json
+  addDependenciesToPackageJson(
+    tree,
+    {},
+    {
+      typescript: '^5.8.3',
+      tsx: '^4.7.1',
+      '@types/node': '^20.11.17',
+    }
+  );
+
   await formatFiles(tree);
 }
 
