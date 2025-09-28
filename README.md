@@ -1,23 +1,21 @@
-# HonoNx
+# hono-nx
 
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
 
-✨ Your new, shiny [Nx workspace](https://nx.dev) is ready ✨.
+Bring the power of [Hono](https://hono.dev) to your [Nx](https://nx.dev) workspace! This plugin provides generators to seamlessly create Hono applications within your monorepo.
 
-Run `npx nx graph` to visually explore what got created. Now, let's get you up to speed!
+## 🚀 Getting Started
 
-## Run tasks
+### Prerequisites
 
-To run tasks with Nx use:
+This plugin is designed to be used inside an existing Nx workspace.
 
-```sh
-npx nx <target> <project-name>
-```
+### Installation
 
-For example:
+Install the `hono-nx` plugin in your workspace:
 
 ```sh
-npx nx build myproject
+npm install --save-dev hono-nx
 ```
 
 These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
