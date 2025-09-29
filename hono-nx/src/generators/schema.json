@@ -20,7 +20,7 @@
         "$source": "argv",
         "index": 1
       },
-      "x-prompt": "In which directory should the application be created? (Leave blank for 'apps/')"
+      "x-prompt": "In which directory should the application be created? (Leave blank for 'packages/')"
     },
     "port": {
       "type": "number",
