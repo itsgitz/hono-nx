@@ -17,10 +17,13 @@ export async function appGenerator(tree: Tree, options: AppGeneratorSchema) {
   }
 
   //
-  // By default we create apps under the `apps/` directory.
+  // By default we create apps under the `packages/` directory.
+  // previous default was `apps/` but we want to align with monorepo default starter repository structure
+  // from command:
+  // npx create-nx-workspace@latest
   const projectRoot = options.directory
     ? `${options.directory}/${options.name}`
-    : `apps/${options.name}`;
+    : `packages/${options.name}`;
 
   addProjectConfiguration(tree, options.name, {
     root: projectRoot,
