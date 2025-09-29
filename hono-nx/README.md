@@ -1,13 +1,12 @@
 # Hono NX
 
-[![CI](https://github.com/itsgitz/hono-nx/actions/workflows/ci.yml/badge.svg)](https://github.com/itsgitz/hono-nx/actions/workflows/ci.yml)
+[![CI](https://github.com/itsgitz/hono-nx/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/itsgitz/hono-nx/actions/workflows/ci.yml)
 [![npm version](https://img.shields.io/npm/v/hono-nx.svg?logo=npm&color=cb3837)](https://www.npmjs.com/package/hono-nx)
 
-This plugin provides generators to create [Hono](https://hono.dev) applications within an [Nx](https://nx.dev) workspace. It currently supports generating applications for the [Node.js runtime](https://hono.dev/docs/getting-started/nodejs).
+Hono NX is an [Nx](https://nx.dev) plugin for generating [Hono](https://hono.dev) application starters.  
+Currently, it only supports the [Node.js runtime](https://hono.dev/docs/getting-started/nodejs).
 
 ## Installation
-
-To get started, add the plugin to your Nx workspace:
 
 ```sh
 nx add hono-nx
