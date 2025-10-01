@@ -1,6 +1,7 @@
 # Hono NX Plugin
 
 [![CI](https://github.com/itsgitz/hono-nx/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/itsgitz/hono-nx/actions/workflows/ci.yml)
+[![license](https://img.shields.io/npm/l/gh-push-vars)](https://opensource.org/licenses/MIT)
 [![npm version](https://img.shields.io/npm/v/hono-nx.svg?logo=npm&color=cb3837)](https://www.npmjs.com/package/hono-nx)
 
 This repository contains the source code for the **Hono NX plugin**, which provides generators for creating [Hono](https://hono.dev) applications inside an [Nx](https://nx.dev) workspace.

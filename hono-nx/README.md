@@ -1,6 +1,7 @@
 # Hono NX
 
 [![CI](https://github.com/itsgitz/hono-nx/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/itsgitz/hono-nx/actions/workflows/ci.yml)
+[![license](https://img.shields.io/npm/l/gh-push-vars)](https://opensource.org/licenses/MIT)
 [![npm version](https://img.shields.io/npm/v/hono-nx.svg?logo=npm&color=cb3837)](https://www.npmjs.com/package/hono-nx)
 
 Hono NX is an [Nx](https://nx.dev) plugin for generating [Hono](https://hono.dev) application starters.  
