@@ -4,7 +4,7 @@
   "type": "commonjs",
   "description": "An Nx plugin to generate Hono atppplications within an Nx monorepo.",
   "main": "./src/index.js",
-  "homepage": "https://www.itsgitz.my.id",
+  "homepage": "https://github.com/itsgitz/hono-nx.git",
   "repository": {
     "type": "git",
     "url": "https://github.com/itsgitz/hono-nx.git"
