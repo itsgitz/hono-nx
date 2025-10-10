@@ -1,6 +1,6 @@
 {
   "name": "hono-nx",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "type": "commonjs",
   "description": "An Nx plugin to generate Hono atppplications within an Nx monorepo.",
   "main": "./src/index.js",
